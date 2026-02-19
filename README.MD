@@ -1,12 +1,12 @@
 # Objectif du projet
 
-Créer une page blog à l'aide de PHP en stockant les données dans une base de données SQL. Cette page peut être modifiée par les utilisateurs inscrits à la base de données utilisateur.
+Créer une page de blog à l'aide de PHP en stockant les données dans une base de données SQL. Cette page peut être modifiée par les utilisateurs inscrits à la base de données utilisateur.
 
 ## Structure du projet
 
 ### Page d'Accueil (accueil.php)
 
-Cette page a pour fonction d'exposer les articles de blogs. Il y a une possibilité de se connecter en cliquant sur le lien en haut de la page, et ainsi avoir toutes les fonctions pour pouvoir éditer le blog.
+Cette page a pour fonction d'exposer les articles de blogs. Il y a une possibilité de se connecter en cliquant sur le lien en haut de la page, et ainsi avoir toutes les fonctionnalités pour pouvoir éditer le blog.
 
 ### Section utilisateur
 

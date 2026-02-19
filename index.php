@@ -12,7 +12,8 @@ $data->execute();
 $articles = $data->fetchAll();
 
 foreach($articles as $article):
-    ?>
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>

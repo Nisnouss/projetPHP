@@ -7,4 +7,4 @@ echo"Vous vous êtes déconnecté.";
 <head>
     <link rel="stylesheet" href="style/stylelogout.css">
 </head>
-<a href="login.php">Se reconnecter</a>
+<a href="accueil.php">Se reconnecter</a>
