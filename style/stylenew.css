@@ -1,0 +1,98 @@
+/* Utilisation de l'IA pour se CSS */
+/* Importation d'une police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 0;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Style du conteneur du formulaire */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Style des labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Style des champs de saisie (input et textarea) */
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Pour que le padding ne dépasse pas */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au focus (quand on clique dans le champ) */
+input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Style spécifique au textarea */
+textarea {
+    resize: vertical; /* Permet de redimensionner seulement en hauteur */
+    min-height: 150px;
+}
+
+/* Style du bouton de soumission */
+input[type="submit"] {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* Style du message de succès ou d'erreur */
+p {
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}

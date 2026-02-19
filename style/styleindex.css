@@ -1,0 +1,197 @@
+/* Utilisation de l'IA pour se CSS */
+/* --- Variables pour faciliter les changements de couleurs --- */
+:root {
+    --primary-color: #3498db;
+    --danger-color: #e74c3c;
+    --text-color: #2c3e50;
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+}
+
+/* --- Base --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+header a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* --- Conteneur Principal --- */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #34495e;
+}
+
+/* --- Style des Articles (Cartes) --- */
+article {
+    background: var(--card-bg);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+article:hover {
+    transform: translateY(-3px);
+}
+
+article h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+article p {
+    margin: 15px 0;
+    white-space: pre-line; /* Respecte les sauts de ligne du texte */
+}
+
+small {
+    color: #7f8c8d;
+    display: block;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* --- Boutons et Actions --- */
+.actions {
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.actions a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.actions a[href*="update"] {
+    color: var(--primary-color);
+}
+
+.actions a[href*="delete"] {
+    color: var(--danger-color);
+}
+
+/* Style spécifique pour le bouton "Créer" */
+.btn-create {
+    background-color: #27ae60;
+    color: white !important;
+    font-weight: bold;
+}
+
+.btn-create:hover {
+    background-color: #2ecc71 !important;
+}
+
+/* --- Style Global des Liens --- */
+a {
+    text-decoration: none; /* On enlève le soulignement moche */
+    transition: all 0.3s ease; /* Animation douce au survol */
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* --- Bouton Se Déconnecter (Header) --- */
+header a[href="logout.php"] {
+    background-color: transparent;
+    color: #ecf0f1;
+    border: 1px solid #ecf0f1;
+}
+
+header a[href="logout.php"]:hover {
+    background-color: #e74c3c; /* Rouge au survol */
+    border-color: #e74c3c;
+}
+
+/* --- Bouton Créer un article --- */
+a[href="create.php"] {
+    background-color: #2ecc71; /* Vert */
+    color: white;
+    margin-bottom: 20px;
+}
+
+a[href="create.php"]:hover {
+    background-color: #27ae60;
+    transform: scale(1.05); /* S'agrandit légèrement */
+}
+
+/* --- Liens d'Action (Modifier / Supprimer) --- */
+.actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Modifier */
+a[href*="update.php"] {
+    background-color: #3498db; /* Bleu */
+    color: white;
+}
+
+a[href*="update.php"]:hover {
+    background-color: #2980b9;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.4);
+}
+
+/* Supprimer */
+a[href*="delete.php"] {
+    background-color: #f3f3f3;
+    color: #e74c3c; /* Texte rouge */
+    border: 1px solid #e74c3c;
+}
+
+a[href*="delete.php"]:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

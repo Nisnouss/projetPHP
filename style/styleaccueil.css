@@ -1,0 +1,74 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+/* En-tête et Navigation */
+header {
+    background: #2c3e50;
+    padding: 1rem 2rem;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #3498db;
+}
+
+/* Conteneur principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style des cartes d'articles */
+.article-card {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-card h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    margin-bottom: 15px;
+}
+
+/* Date de publication */
+.date {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    font-style: italic;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
