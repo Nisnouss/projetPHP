@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
                 if($user && password_verify($password, $user['password'])){
                 $_SESSION['id'] = $user['id'];
                 $_SESSION['name'] = $user['name'];
-                header('Location: index.php');
+                header('Location: uniqueindex.php');
                 exit();
             }else{
                 $message = "Mot de passe invalide";
@@ -40,8 +40,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     <link rel="stylesheet" href="style/stylelogin.css">
 </head>
 <body>
-    <form action="login.php" method="post">
-        <h1>Connexion</h1>
+    <form action="uniquelogin.php" method="post">
+        <h1>Vérification d'identité</h1>
         <p><?= $message ?></p>
         <label for="name">Nom :</label>
         <input type="text" name="name" id="name" placeholder="Votre nom">
@@ -50,8 +50,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         <label for="password">Mot de passe :</label>
         <input type="password" name="password" id="password" placeholder="Votre mot de passe">
         <input type="submit" id="btn" value="Se connecter">
-        <label for="create">Vous n'avez pas compte ?</label>
-        <a href="createaccount.php">S'inscrire</a>
     </form>
 </body>
 </html>

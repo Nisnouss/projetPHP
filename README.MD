@@ -39,3 +39,9 @@ Programme permettant la suppression d'articles en appuyant sur le bouton spécif
 #### Page de déconnexion (logout.php)
 
 Page confirmant la déconnexion et proposant un lien pour retourner à la page d'accueil.
+
+### Sécurité du blog
+
+#### Modifier, Ajouter et Supprimer
+
+Avant de modifier, d'ajouter ou supprimer un article (index.php), en cliquant sur les boutons respectifs de chacune de ces fonctionnalités, l'utilisateur est envoyé vers un page de vérification d'identité (uniquelogin.php) afin de vérifier si celui-ci est bien enregistré. Une fois vérifié l'utilisateur est dirigé vers une page nommée 'uniqueindex.php' où il est possible de réaliser les modifications.

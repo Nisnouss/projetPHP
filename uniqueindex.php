@@ -27,9 +27,9 @@ foreach($articles as $article):
         <h3><?= $article["title"]?></h3>
         <p><?= $article["content"]?></p>
         <p>Date de publication : <?= $article["date"]?></p>
-        <a href="uniquelogin.php">Créer un nouvel article</a>
-        <a href="uniquelogin.php>">Mettre à jour l'article</a>
-        <a href="uniquelogin.php">Supprimer l'article</a>
+        <a href="create.php">Créer un nouvel article</a>
+        <a href="update.php?id=<?=$article["id"]?>">Mettre à jour l'article</a>
+        <a href="delete.php?id=<?=$article["id"]?>">Supprimer l'article</a>
     </main>
 </body>
 </html>
