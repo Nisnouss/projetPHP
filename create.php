@@ -45,9 +45,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         <input type="text" name="title" id="title" placeholder="Saisir le titre le l'article">
         <br>
         <br>
-        <label for="content">Veuillez écrire du contenu :</label>
+        <label for="content">Contenu de l'article :</label>
         <br>
-        <input type="text" name="content" id="content" placeholder="Contenu de l'article">
+        <input type="text" name="content" id="content" placeholder="Veuillez écrire du contenu">
         <br>
         <br>
         <input type="date" name="date" id="date">

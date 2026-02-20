@@ -2,7 +2,7 @@
 <header>
     <a href="logout.php">Se déconnecter</a>
 </header>
-<!-- Programme permettant d'afficher les articles stockés dans la base de données -->
+<!-- Programme permettant d'afficher les articles stockés dans la base de données 'articles' -->
 <?php
 require_once 'connect.php';
 $data = $db->prepare("SELECT * FROM articles");

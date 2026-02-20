@@ -1,4 +1,4 @@
-<!-- Programme permettant la connexion à un compte enregistré dans la base de données utilisateur -->
+<!-- Programme permettant la connexion à un compte enregistré dans la base de données 'users' -->
 <?php
 session_start();
 require_once 'connect.php';

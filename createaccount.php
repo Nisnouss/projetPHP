@@ -1,4 +1,4 @@
-<!-- Programme permettant l'ajout d'utilisateurs -->
+<!-- Programme permettant l'ajout d'utilisateurs à la base de données 'users' -->
 <?php
 require_once 'connect.php';
 $message = "";
