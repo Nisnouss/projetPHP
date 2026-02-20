@@ -1,5 +1,6 @@
-<!-- Lien vers la page de déconnexion -->
 <header>
+    <a href="#">Blog</a>
+    <a href="uniquelogin.php">Ajouter, Editer, ou Supprimer un article</a>
     <a href="logout.php">Se déconnecter</a>
 </header>
 <!-- Programme permettant d'afficher les articles stockés dans la base de données 'articles' -->
@@ -23,13 +24,11 @@ foreach($articles as $article):
         <link rel="stylesheet" href="style/styleindex.css">
     </head>
     <body>
-    <main>
+        <!-- Lien vers la page de déconnexion -->
+        <main>
         <h3><?= $article["title"]?></h3>
         <p><?= $article["content"]?></p>
         <p>Date de publication : <?= $article["date"]?></p>
-        <a href="uniquelogin.php">Créer un nouvel article</a>
-        <a href="uniquelogin.php>">Mettre à jour l'article</a>
-        <a href="uniquelogin.php">Supprimer l'article</a>
     </main>
 </body>
 </html>

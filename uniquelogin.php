@@ -49,7 +49,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         <input type="email" name="email" id="email" placeholder="Votre email">
         <label for="password">Mot de passe :</label>
         <input type="password" name="password" id="password" placeholder="Votre mot de passe">
-        <input type="submit" id="btn" value="Se connecter">
+        <input type="submit" id="btn" value="Vérifier">
     </form>
 </body>
 </html>

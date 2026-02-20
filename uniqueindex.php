@@ -1,5 +1,7 @@
 <!-- Lien vers la page de déconnexion -->
 <header>
+    <a href="#">Blog</a>
+    <a href="create.php">Créer un nouvel article</a>
     <a href="logout.php">Se déconnecter</a>
 </header>
 <!-- Programme permettant d'afficher les articles stockés dans la base de données 'articles' -->
@@ -27,8 +29,7 @@ foreach($articles as $article):
         <h3><?= $article["title"]?></h3>
         <p><?= $article["content"]?></p>
         <p>Date de publication : <?= $article["date"]?></p>
-        <a href="create.php">Créer un nouvel article</a>
-        <a href="update.php?id=<?=$article["id"]?>">Mettre à jour l'article</a>
+        <a href="update.php?id=<?=$article["id"]?>">Editer l'article</a>
         <a href="delete.php?id=<?=$article["id"]?>">Supprimer l'article</a>
     </main>
 </body>

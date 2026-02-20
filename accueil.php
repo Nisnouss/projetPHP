@@ -1,5 +1,6 @@
 <!-- Lien vers la page de déconnexion -->
 <header>
+    <a href="#">Blog</a>
     <a href="login.php">Se connecter</a>
 </header>
 
