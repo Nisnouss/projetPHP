@@ -1,4 +1,4 @@
-<!-- Programme permettant de récupérer la base de donnée-->
+<!-- Programme permettant de récupérer la base de donnée -->
 <?php
 try {
     $db = new PDO(
